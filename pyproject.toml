@@ -9,13 +9,15 @@ dependencies = [
     "matplotlib>=3.10.8",
     "nbformat>=5.10.4",
     "nltk>=3.9.1",
-    "numpy>=2.4.1",
+    "numpy>=2.0,<2.4",
     "pandas>=2.3.3",
     "pyright>=1.1.408",
     "scikit-learn>=1.8.0",
     "scipy>=1.17.0",
     "seaborn>=0.13.2",
     "statsmodels>=0.14.6",
+    "umap-learn>=0.5.7",
+    "numba>=0.60",
 ]
 
 [dependency-groups]
@@ -23,3 +25,6 @@ dev = [
     "nbqa>=1.9.1",
     "ruff>=0.14.14",
 ]
+
+[tool.uv]
+prerelease = "if-necessary"
